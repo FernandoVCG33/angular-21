@@ -3,7 +3,7 @@ import {RouterOutlet} from '@angular/router';
 import {SideMenu} from '../share/side-menu/side-menu';
 
 @Component({
-  selector: 'app-dashboard',
+  standalone: true,
   imports: [
     RouterOutlet, SideMenu
   ],
