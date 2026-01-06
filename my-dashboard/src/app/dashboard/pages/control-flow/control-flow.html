@@ -13,5 +13,24 @@
     } @else {
       <p>********</p>
     }
+
+  </div>
+
+  <div class="bg-white rounded shadow p-10">
+    <h2 class="text-2xl font-bold"> La nota es  {{grade()}} </h2>
+    @switch (grade()){
+      @case ('A'){
+        <p>Arriba de 90</p>
+      }
+      @case ('B'){
+        <p>Arriba de 80</p>
+      }
+      @case ('C'){
+        <p>Rbrpbados</p>
+      }
+      @default {
+        <p>Valor innvalido </p>
+      }
+    }
   </div>
 </section>
