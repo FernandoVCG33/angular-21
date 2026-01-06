@@ -4,8 +4,8 @@ import {Component} from '@angular/core';
   selector: 'app-user-loader',
   standalone: true,
   imports: [],
-  templateUrl: `<h1> Nombre del Usuario </h1> `,
+  template: `<h1>Users Loader</h1>`,
 })
-export class UserLoadersFast {
+export class UsersLoaderComponent {
 
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-heavy-loaders-slow',
+  selector: 'app-heavy-loaders-fast',
+  standalone: true,
   imports: [],
-  templateUrl: `<h1> Hola Mundo </h1> `,
+  template: `<h1>Heavy Loader Fast</h1>`,
 })
 export class HeavyLoadersFast {
 
