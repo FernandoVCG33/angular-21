@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, input} from '@angular/core';
 
 @Component({
   selector: 'app-title',
+  standalone: true,
   imports: [],
-  templateUrl: './title.html',
+  template: `<h1 class="text-3xl mb-5 font-bold text-blue-950 "> {{title()}} </h1>`
 })
 export class Title {
-
+    title=input.required();
 }
