@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
+import {routes} from '../../app.routes';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-side-menu',
-  imports: [],
-  templateUrl: './side-menu.html',
-  styleUrl: './side-menu.css',
+  imports: [
+    RouterLink,
+    RouterLinkActive
+  ],
+  templateUrl: './side-menu.html'
 })
 export class SideMenu {
+
+  public nemuItemsRoutes=routes
+    .map(route => route.children ?? [])
+    .flat()
+    .filter(route => route && route.path)
+    .filter(route => !route.path?.includes(':') );
 
 }
