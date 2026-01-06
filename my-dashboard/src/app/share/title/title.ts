@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-title',
   imports: [],
   templateUrl: './title.html',
-  styleUrl: './title.css',
 })
 export class Title {
 
