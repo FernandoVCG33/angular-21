@@ -4,12 +4,26 @@
   <h1>Interacciones</h1>
   <hr>
   @defer (on interaction  ){
-    <app-heavy-loaders-fast cssClass="bg-blue-500">
+    <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 cursor-pointer">
       <span>On Interacton</span>
     </app-heavy-loaders-fast>
   } @placeholder (){
     <div class="w-full h-20 bg-purple-500 cursor-pointer">
         click en el div
+    </div>
+  }
+</section>
+
+<section>
+  <h1>Interacciones</h1>
+  <hr>
+  @defer (on interaction  ){
+    <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 cursor-pointer">
+      <span>On Interacton</span>
+    </app-heavy-loaders-fast>
+  } @placeholder (){
+    <div class="w-full h-20 bg-purple-500 cursor-pointer">
+      click en el div
     </div>
   }
 </section>
