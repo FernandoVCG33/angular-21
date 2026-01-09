@@ -34,10 +34,35 @@
 
 <section>
   <hr class="my-2">
-
   @defer (on hover(btnInteracion)   ){
     <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 ">
       <span>On Hover</span>
+    </app-heavy-loaders-fast>
+  } @placeholder (){
+    <div class="w-full h-20 bg-purple-300">
+      Hover btn
+    </div>
+  }
+</section>
+
+<section>
+  <hr class="my-2">
+  @defer (on immediate ){
+    <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 ">
+      <span>On Immediate</span>
+    </app-heavy-loaders-fast>
+  } @placeholder (){
+    <div class="w-full h-20 bg-purple-300">
+      Placeholder div
+    </div>
+  }
+</section>
+
+<section>
+  <hr class="my-2">
+  @defer (on hover ; prefetch on immediate ){
+    <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 ">
+      <span>On hover,  </span>
     </app-heavy-loaders-fast>
   } @placeholder (){
     <div class="w-full h-20 bg-purple-300">
