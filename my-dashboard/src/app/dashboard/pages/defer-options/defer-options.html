@@ -1,7 +1,12 @@
-<app-title title="Defer Triggers" />
+<app-title title="Defer Triggers"/>
 
 <section>
   <h1>Interacciones</h1>
   <hr>
-  <app-heavy-loaders-fast cssClass="bg-blue-500 h-20" />
+  @defer (  ){
+    <app-heavy-loaders-fast cssClass="bg-blue-500">
+      <span>On interacton</span>
+    </app-heavy-loaders-fast>
+  }
+
 </section>
