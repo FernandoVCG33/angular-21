@@ -8,7 +8,7 @@
       <span>On Interacton</span>
     </app-heavy-loaders-fast>
   } @placeholder (){
-    <div class="w-full h-20 bg-purple-500 cursor-pointer">
+    <div class="w-full h-20 bg-purple-300 cursor-pointer">
         click en el div
     </div>
   }
@@ -16,16 +16,18 @@
 
 <section>
   <hr>
-  <button class="p-2 bg-blue-500 hover:bg-blue-200 cursor-pointer transition-all rounded text-white my-2" >
+  <button
+    #btnInteracion
+    class="p-2 bg-blue-500 hover:bg-blue-200 cursor-pointer transition-all rounded text-white my-2" >
     click me
   </button>
-  @defer (on interaction  ){
-    <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 cursor-pointer">
+  @defer (on interaction (btnInteracion)  ){
+    <app-heavy-loaders-fast cssClass="bg-blue-500 hover:bg-blue-700 ">
       <span>On Interacton</span>
     </app-heavy-loaders-fast>
   } @placeholder (){
-    <div class="w-full h-20 bg-purple-500 cursor-pointer">
-      click en el div
+    <div class="w-full h-20 bg-purple-300">
+      Placeholder div
     </div>
   }
 </section>
