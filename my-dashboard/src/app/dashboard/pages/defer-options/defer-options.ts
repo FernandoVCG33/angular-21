@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-defer-options',
   imports: [],
   templateUrl: './defer-options.html',
-  styleUrl: './defer-options.css',
+
 })
 export default class DeferOptions {
 
