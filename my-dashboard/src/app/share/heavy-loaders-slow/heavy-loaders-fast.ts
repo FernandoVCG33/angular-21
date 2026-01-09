@@ -14,4 +14,7 @@ import {NgClass} from '@angular/common';
 })
 export class HeavyLoadersFast {
   @Input({ required : true }) cssClass!: string ;
+  constructor() {
+    console.log('HeavyLoadersFast creado!');
+  }
 }
