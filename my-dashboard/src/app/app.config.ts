@@ -8,7 +8,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withViewTransitions({
-        skipInitialTransition: true
+        skipInitialTransition: true,
+        onViewTransitionCreated(transitionInfo) {
+          console.log({transitionInfo});
+        },
       }),
       )
   ]
