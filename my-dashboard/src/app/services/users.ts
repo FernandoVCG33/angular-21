@@ -16,5 +16,6 @@ export class Users {
     users:[],
   })
   constructor() {
+    console.log("Users loaded");
   }
 }
