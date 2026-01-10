@@ -1,11 +1,17 @@
 import { Component, inject } from '@angular/core';
-import Users from '../users/users';
+import {Title} from '../../../share/title/title';
+import {CommonModule} from '@angular/common';
+import {UsersService} from '../../../services/users';
+
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  imports: [ CommonModule,
+    Title
+  ],
   templateUrl: './user.html',
 })
 export default class User {
-  public userServivce= inject(Users);
+  public userServiceList= inject(UsersService);
+
 }

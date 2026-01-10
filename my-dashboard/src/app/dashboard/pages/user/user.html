@@ -1,1 +1,12 @@
-<p>user works!</p>
+<app-title title="Listado de usuarios" />
+
+<ul>
+  @for (user of userServiceList.users(); track user.id) {
+      <li>
+        <img
+            [srcset]="user.avatar"
+            alt="imagen"
+        />
+      </li>
+  }
+</ul>
