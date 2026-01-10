@@ -1,4 +1,5 @@
-import {Injectable, signal} from '@angular/core';
+import {inject, Injectable, signal} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 interface State {
   users: Users[];
@@ -9,6 +10,7 @@ interface State {
   providedIn: 'root',
 })
 export class Users {
+  private http=inject(HttpClient);
   #state= signal<State>({
     loading:true,
     users:[],
