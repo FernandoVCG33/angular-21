@@ -16,3 +16,6 @@ Angular 21 consolida la arquitectura basada en **Signals**, elimina la dependenc
 * **⚡ Vitest por Defecto:** Reemplazo oficial de Karma/Jasmine. Tests unitarios instantáneos.
 * **📦 Builds Ligeros:** Mejoras agresivas en *Tree-shaking* (hasta 40% menos peso en bundle).
 * **🌐 HttpClient:** Configurado automáticamente (cero boilerplate).
+## Estructura
+
+## Objetivo
